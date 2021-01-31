@@ -20,7 +20,7 @@
 
             src = fetchGit {
               url = "https://codeberg.org/tropf/smplxmpp";
-              rev = "0716346941b4b8a308ad57c26ad6ac3e61eab997";
+              rev = "eb8e3ab003a5be6c6f75ffc9cb5726e428512797";
             };
 
             nativeBuildInputs = [ pkgs.cmake pkgs.gnumake ];
