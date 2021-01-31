@@ -10,7 +10,6 @@
       (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        version = "0.9.1";
       in
         {
           packages.smplxmpp = pkgs.stdenv.mkDerivation {
@@ -23,7 +22,7 @@
               rev = "eb8e3ab003a5be6c6f75ffc9cb5726e428512797";
             };
 
-            nativeBuildInputs = [ pkgs.cmake pkgs.gnumake ];
+            nativeBuildInputs = [ pkgs.cmake pkgs.gnumake pkgs.git ];
             buildInputs = [ pkgs.spdlog pkgs.gloox pkgs.zlib pkgs.gnutls pkgs.libidn];
           };
 
